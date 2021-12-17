@@ -1,0 +1,30 @@
+int buzzer=5;
+int LED1=9;
+int LED2=11;
+boolean onoff=LOW;
+void setup() 
+{
+  pinMode(buzzer,OUTPUT);
+  pinMode(LED1,OUTPUT);
+  pinMode(LED2,OUTPUT);
+  
+  
+ 
+
+}
+
+void loop() 
+{ unsigned char i,j;
+while(1)
+{for(i=0;i<200;i++)
+{ digitalWrite(buzzer,HIGH);digitalWrite(LED1,HIGH);digitalWrite(LED2,LOW);
+
+delay(1);
+digitalWrite(buzzer,LOW);
+delay(1);
+}
+for(i=0;i<100;i++)
+{ digitalWrite(buzzer,HIGH);digitalWrite(LED2,HIGH);digitalWrite(LED1,LOW);
+delay(2);
+digitalWrite(buzzer,LOW);
+delay(2);}}}
